@@ -1,0 +1,11 @@
+<svg width="347" height="509" viewBox="0 0 347 509" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<path d="M40 176.422C40 102.692 99.77 42.9219 173.5 42.9219V42.9219C247.23 42.9219 307 102.692 307 176.422V462.922C307 465.131 305.209 466.922 303 466.922H44C41.7909 466.922 40 465.131 40 462.922V176.422Z" fill="url(#pattern0)"/>
+<path d="M40 176.422C40 102.692 99.77 42.9219 173.5 42.9219V42.9219C247.23 42.9219 307 102.692 307 176.422V462.922C307 465.131 305.209 466.922 303 466.922H44C41.7909 466.922 40 465.131 40 462.922V176.422Z" stroke="#F2F7FC" stroke-width="4" stroke-linejoin="round"/>
+<path d="M2 174.422C2 79.7051 78.7832 2.92188 173.5 2.92188V2.92188C268.217 2.92188 345 79.7051 345 174.422V502.922C345 505.131 343.209 506.922 341 506.922H6.00001C3.79087 506.922 2 505.131 2 502.922V174.422Z" stroke="#F2F7FC" stroke-width="4" stroke-linejoin="round"/>
+<defs>
+<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_541_63976" transform="translate(-0.148681) scale(0.000459894 0.000289603)"/>
+</pattern>
+</defs>
+
+</svg>
