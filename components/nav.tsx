@@ -24,7 +24,7 @@ function Nav() {
           <hr className="invisible border-blue-500 peer-hover:transition border-2 my-1 mx-1 peer-hover:visible peer-hover:ease-in-out peer-hover:duration-[3000ms] " />
         </span>
       </div>
-      <span className="border-2 font-poppins font-normal mr-4 flex justify-center items-center rounded">
+      <span className="border-4 font-poppins font-normal mr-4 flex justify-center items-center rounded">
         <p className="p-1">Contacts</p>
       </span>
       <div className="rounded-full border-4">

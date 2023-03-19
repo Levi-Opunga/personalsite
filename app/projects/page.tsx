@@ -21,10 +21,17 @@ function page() {
     // { title: "The Watchlist", details: [], imageOne: "", imageTwo: "" },
   ];
 
+  // @ts-ignore
   return (
     <ReactFullpage
       //fullpage options
-      licenseKey={"YOUR_KEY_HERE"}
+        // @ts-ignore
+        credits= {{
+          enabled: true,
+            label: "Levi",
+            position: "left"
+        }}
+      licenseKey=""
       scrollingSpeed={1000} /* Options here */
       navigation
       render={({ state, fullpageApi }) => {
