@@ -10,7 +10,7 @@ function NavSlim() {
 
   return (
 
-    <div className=" hidden md:grid grid-rows-7 h-screen  select-none	 font-pirata font-bold text-2xl py-2 md:absolute  md:top-0  md:right-0 px-2 select-none bg-[#f8f9fa]">
+    <div className=" hidden md:grid grid-rows-7 h-screen  select-none	 font-pirata font-bold text-2xl py-2 md:absolute w-[10%] md:top-0  md:right-0 px-2 select-none bg-[#f8f9fa]">
 
 
         <h2
