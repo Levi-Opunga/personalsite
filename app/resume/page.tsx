@@ -11,20 +11,47 @@ export default function HomePage() {
 
 
 
-    useEffect(() => {
-        import('@pdftron/webviewer').then(() => {
-            WebViewer(
-                {
-                    path: '/lib',
-                    initialDoc: '/resume.pdf',
-                },
-                viewer.current,
-            ).then((instance) => {
-                const { docViewer } = instance;
-                // you can now call WebViewer APIs here...
-            });
-        })
-    }, []);
+    // // @ts-ignore
+    // useEffect(() => {
+    //     import('@pdftron/webviewer').then(() => {
+    //         if(viewer.current)
+    //         WebViewer(
+    //             {
+    //                 path: '/lib',
+    //                 initialDoc: '/resume.pdf',
+    //             },
+    //             viewer.current,
+    //         );
+    //     })
+    // }, []);
+
+
+        useEffect(() => {
+            const loadWebViewer = async () => {
+                const WebViewer = (await import('@pdftron/webviewer')).default;
+                if (viewer.current) {
+                    WebViewer(
+                        {
+                            path: '/lib',
+                            initialDoc: '/resume.pdf',
+                            disabledElements: [
+                                'viewControlsButton',
+                                'viewControlsOverlay',
+                                'toolsOverlay',
+                                'ribbonsDropdown',
+                                'selectToolButton',
+                                'panToolButton',
+                                'leftPanelButton',
+                                'toggleNotesButton',
+                                'toolsHeader',
+                            ],
+                        },
+                        viewer.current
+                    );
+                }
+            };
+            loadWebViewer();
+        }, []);
 
 
     return (
