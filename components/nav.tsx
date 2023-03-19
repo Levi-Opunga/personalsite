@@ -2,14 +2,15 @@
 import React from 'react'
 import Image from 'next/image';
 import {useRouter} from 'next/navigation';
+import {MdClose} from "react-icons/all";
 
 function Nav() {
 
     const router = useRouter()
    
-  return (
-    <div className=" hidden md:flex flex-row mx-8 items-center font-pirata font-bold text-2xl py-2 px-2  pb-20">
-      <h2 className="text-8xl basis-1/5">Levi</h2>
+  return (<>
+    <div className=" hidden md:flex flex-row mx-8 items-center font-pirata font-bold text-2xl py-2 px-2 select-none	  pb-20">
+      <h2 className="text-8xl basis-1/5" onClick={()=>router.push("/")}>Levi</h2>
       <div className="pl-5 flex flex-row font-poppins font-normal  gap-4 basis-3/5 ">
         <span>
           <p className="peer">Blog</p>
@@ -19,7 +20,7 @@ function Nav() {
           <p className="peer">Projects</p>
           <hr className="invisible border-blue-500 peer-hover:transition border-2 my-1 mx-1 peer-hover:visible peer-hover:ease-in-out peer-hover:duration-[3000ms] " />
         </span>
-        <span>
+        <span onClick={()=>router.push("resume")}>
           <p className="peer">Resume</p>
           <hr className="invisible border-blue-500 peer-hover:transition border-2 my-1 mx-1 peer-hover:visible peer-hover:ease-in-out peer-hover:duration-[3000ms] " />
         </span>
@@ -36,7 +37,7 @@ function Nav() {
           src="/circle.png"
         />
       </div>
-    </div>
+    </div></>
   );
 }
 

@@ -8,6 +8,7 @@ import {
   SiSpring,
 } from "react-icons/si";
 import intro from "../app/intro.module.css";
+import {FiMenu} from "react-icons/fi";
 
 function Intro() {
   return (
@@ -98,6 +99,8 @@ function Intro() {
             <p className="text-4xl font-bold  pb-1">Hey there, </p>
             <p className="text-[3rem] leading-none font-bold font-roboto ">
               I&apos;m Levi Opunga<b className="text-blue-500">.</b>
+
+
             </p>
           </div>
           <div className="font-fira px-3 ">
