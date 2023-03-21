@@ -19,7 +19,7 @@ export default function Home() {
     return (
       <main
         className={
-          "bg-black min-h-screen md:min-h-full text-white  w-full " +
+          "bg-black min-h-screen md:min-h-full text-white w-full " +
           inter.className
         }
       >

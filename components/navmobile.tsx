@@ -12,7 +12,7 @@ const NavMobile:React.FC<Props> = ({setShown})=> {
 
   return (
 
-    <section className="w-screen md:hidden transition duration-1000 fixed top-0 z-20 bg-white/25 left-0 h-screen ">
+    <section className="w-screen md:hidden grid grid-cols-2 auto-cols-auto transition duration-1000 fixed overflow-y-hidden  top-0 z-20 bg-black/40 left-0 h-screen ">
       
       <div className=" md:hidden grid grid-rows-7 text-black font-pirata font-bold text-2xl py-2  w-fit h-screen   px-2 select-none bg-[#f8f9fa]">
           <MdClose onClick={()=>setShown(false)}/>
@@ -49,6 +49,9 @@ const NavMobile:React.FC<Props> = ({setShown})=> {
           />
         </span>
       </div>
+  <div className="blur-md bg-black/60">
+
+  </div>
     </section >
   );
 }
