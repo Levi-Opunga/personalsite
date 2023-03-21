@@ -109,7 +109,7 @@ function Intro() {
               <b className="font-medium">
                 Fullstack <SiReact className="inline " />
               </b>
-              web <SiSpring className="inline " /> developer, Native{" "}
+              web developer, Native{" "}
               <b>
                 <DiAndroid className="inline text-xl" />
                 android{" "}
