@@ -8,6 +8,7 @@ import Nav from '@/components/nav'
 import NavMobile from "@/components/navmobile";
 import React, {useState} from "react";
 import {FiMenu} from "react-icons/fi";
+import "./page.module.css"
 
 
 const inter = Inter({subsets: ['latin']})
@@ -16,16 +17,18 @@ export default function Home() {
     const [mobileNavShown, setMobileNavShown] = useState(false);
 
     return (
-        <main
-            className={
-                "bg-black min-h-screen md:min-h-full text-white  w-full " +
-                inter.className
-            }
-        >
-            <FiMenu className="md:hidden text-white z-20 absolute  top-3 left-3 text-3xl"
-                    onClick={() => setMobileNavShown(!mobileNavShown)}/>
+      <main
+        className={
+          "bg-black min-h-screen md:min-h-full text-white  w-full " +
+          inter.className
+        }
+      >
+        <FiMenu
+          className="md:hidden text-white z-20 absolute main top-3 left-3 text-3xl"
+          onClick={() => setMobileNavShown(!mobileNavShown)}
+        />
 
-            {/*<div className="md:hidden  left-0 bg-black pb-2 top-0 z-30 ">*/}
+        {/*<div className="md:hidden  left-0 bg-black pb-2 top-0 z-30 ">*/}
 
         {/*        <span className="rounded-full  ">*/}
         {/*<Image*/}
@@ -35,12 +38,12 @@ export default function Home() {
         {/*    className="w-10 m-2"*/}
         {/*    src="/whitecircle.png"*/}
         {/*/>*/}
-      {/*</span>*/}
-      {/*      </div>*/}
-            {mobileNavShown && <NavMobile setShown={setMobileNavShown}/>}
-            <Nav/>
-            <Intro/>
-            <StackSummary/>
-        </main>
+        {/*</span>*/}
+        {/*      </div>*/}
+        {mobileNavShown && <NavMobile setShown={setMobileNavShown} />}
+        <Nav />
+        <Intro />
+        <StackSummary />
+      </main>
     );
 }

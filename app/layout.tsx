@@ -3,6 +3,10 @@ import './globals.css'
 export const metadata = {
   title: "Levi's Site",
   description: 'My personal websites with my  blog posts',
+  icons: {
+    icon: "/circle.png"
+  }
+
 }
 
 export default function RootLayout({
