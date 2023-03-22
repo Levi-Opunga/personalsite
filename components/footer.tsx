@@ -5,10 +5,14 @@ export default function Footer() {
   return (
     <footer className="text-white py-4 font-pirata">
       <div className="hidden md:grid md:grid-cols-3 ">
-        <p className=" text-2xl ml-[10%] my-auto">Levi Inc</p>
+        <p className=" text-2xl ml-[10%] my-auto">
+          Levi <sub className="text-xs font-fira">.TM</sub>{" "}
+        </p>
 
         <div className="font-roboto">
-          <p className="sm:text-center font-pirata text-white">Blog Updates</p>
+          <p className="sm:text-center font-pirata pb-2 text-white">
+            Blog <b className="text-blue-500">U</b>pdates
+          </p>
           <span>
             <form className="flext grid grid-rows-2 md:inline mx-auto ">
               <input
@@ -16,9 +20,11 @@ export default function Footer() {
                 placeholder="john@example.com"
                 className="bg-transparent w-full md:w-[60%] focus:border-blue-500 placeholder:text-white/90 p-2 h-[3rem]
                  text-white font-bold focus:outline-none border-white border-4"
-              />
-              <button className="text-black font-bold p-0 md:p-2 text-center mx-auto md:mx-0 my-2 
-              md:my-0 border-4 bg-white border-white h-10 md:h-[3.0rem] w-fit">
+              />{" "}
+              <button
+                className="text-black  font-bold p-0 md:p-2 text-center mx-auto md:mx-0 my-2 
+              md:my-0 border-4 bg-white border-white h-10 md:h-[3.0rem] w-fit"
+              >
                 Subscribe
               </button>
             </form>
@@ -28,10 +34,11 @@ export default function Footer() {
           alt="logo"
           height="2000"
           width="2000"
-          className="w-10 md:w-20 ml-[70%] my-auto"
+          className="md:w-16 ml-[70%] mt-8"
           src="/circle.png"
         />
       </div>
+
       <div className="md:hidden border-4 ">
         <div className="font-roboto">
           <p className="text-center font-pirata text-white">
@@ -53,7 +60,9 @@ export default function Footer() {
         <div className="grid grid-cols-2 mt-3 border-t-4">
           <div className="border-r-4">
             {" "}
-            <p className=" text-2xl ml-[30%]">Levi Inc</p>
+            <p className=" text-2xl ml-[10%] my-auto">
+              Levi <sub className="text-xs font-fira">.TM</sub>{" "}
+            </p>
           </div>
           <Image
             alt="logo"
