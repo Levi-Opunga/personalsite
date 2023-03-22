@@ -57,7 +57,7 @@ export default function HomePage() {
     return (
         <div className="MyComponent">
             <NavSlim/>
-            <div className="webviewer md:w-[90%]" ref={viewer} style={{height: "100vh"}}></div>
+            <div className="webviewer h-screen absolute  w-full right-0 md:w-[80%]" ref={viewer}></div>
         </div>
     );
 

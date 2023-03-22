@@ -9,6 +9,7 @@ import NavMobile from "@/components/navmobile";
 import React, {useState} from "react";
 import {FiMenu} from "react-icons/fi";
 import "./page.module.css"
+import Footer from '@/components/footer'
 
 
 const inter = Inter({subsets: ['latin']})
@@ -19,7 +20,7 @@ export default function Home() {
     return (
       <main
         className={
-          "bg-black min-h-screen md:min-h-full text-white w-full " +
+          "bg-black min-h-screen md:min-h-full select-none text-white w-full " +
           inter.className
         }
       >
@@ -44,6 +45,8 @@ export default function Home() {
         <Nav />
         <Intro />
         <StackSummary />
+        <Footer/>
       </main>
+      
     );
 }

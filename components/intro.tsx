@@ -24,11 +24,14 @@ function Intro() {
                   </h1>
                 </div>
                 <div className=" ">
-                  <p className="text-4xl font-bold text-left pb-10">
+                  <p className="text-4xl font-bold font-fira text-left pb-10">
                     Hey there,{" "}
                   </p>
-                  <p className="text-[3.4rem] leading-none font-bold font-roboto text-left">
-                    I&apos;m Levi Opunga<b className="text-blue-500">.</b>
+                  <p className="text-[3.4rem] leading-none font-bold font-fira text-left">
+                    I&apos;m{" "}
+                    <span className="font-pirata">
+                      Levi Opunga<b className="text-blue-500">.</b>
+                    </span>
                   </p>
                 </div>
                 <div className="font-fira ">
@@ -69,7 +72,7 @@ function Intro() {
                 <a href="https://levi-opunga.github.io/mindscape">
                   <div className="pt-6 ">
                     <p className="peer">More About Me</p>{" "}
-                    <hr className="invisible border-y-2 mt-2 w-32 border-blue-500 peer-hover:visible" />
+                    <hr className="border-y-2 mt-2 w-32 border-blue-500 peer-hover:visible" />
                   </div>
                 </a>
               </div>
@@ -96,11 +99,12 @@ function Intro() {
         />
         <div className="text-center absolute top-[23%]  pt-[34%] ">
           <div className=" ">
-            <p className="text-4xl font-bold  pb-1">Hey there, </p>
+            <p className="text-4xl font-bold  font-fira pb-1">Hey there, </p>
             <p className="text-[3rem] leading-none font-bold font-roboto ">
-              I&apos;m Levi Opunga<b className="text-blue-500">.</b>
-
-
+              I&apos;m{" "}
+              <span className="font-pirata">
+                Levi Opunga<b className="text-blue-500">.</b>
+              </span>{" "}
             </p>
           </div>
           <div className="font-fira px-3 ">

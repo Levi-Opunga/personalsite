@@ -28,7 +28,7 @@ function page() {
         // @ts-ignore
         credits= {{
           enabled: true,
-            label: "Levi",
+            label: "fullpageJs",
             position: "left"
         }}
       licenseKey=""
