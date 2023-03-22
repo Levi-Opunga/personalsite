@@ -32,10 +32,10 @@ const StackSummary = () => {
           <b className="text-blue-400"> Typescript</b> for everthing ,I guess I&apos;m a stickler for
           static typing from the JVM. For multiplatform development Kotlin is my
           favorite for doing android and desktop applications with{" "}
-          <b>JetPack Compose</b>, I love the declarative UI design a much bwtter
+          <b>JetPack Compose</b>, I love the declarative UI design a much better
           developer experience than <b>swing</b> or <b>javafx</b>. For mobile on
           IOs i use React Native on Expo for development and <b>Solito</b> when
-          Want to share a codebase between mobile and web
+          I want to share a codebase between mobile and web.
         </p>
       </div>
     </div>
