@@ -7,13 +7,19 @@ import {
   SiReact,
   SiSpring,
 } from "react-icons/si";
+import {motion} from "framer-motion";
 import intro from "../app/intro.module.css";
 import {FiMenu} from "react-icons/fi";
 
 function Intro() {
   return (
     <>
-      <div className="md:mx-32 hidden md:block">
+      <motion.div
+        animate={{ scale: 1 }}
+        transition={{ duration: 0.7 }}
+        initial={{scale:0 }}
+        className="md:mx-32 hidden md:block"
+      >
         <div className="md:grid md:grid-cols-2 relative gap-3">
           <div className="md:hover:border-[0px] md:rounded-md  h-fit md:hover:bg-blue-600	 shadow-2xl">
             <div className="md:col-span-1  md:border-white md:border-[5px] rounded-sm md:hover:translate-y-4 bg-black md:hover:ease-in-out md:duration-[2000ms] md:transition md:hover:-translate-x-4 shadow-2xl">
@@ -88,8 +94,13 @@ function Intro() {
             />
           </div>
         </div>
-      </div>
-      <div className="relative back md:hidden">
+      </motion.div>
+      <motion.div
+        animate={{ x: 0 }}
+        transition={{ duration: 0.4 }}
+        initial={{ x: -2000 }}
+        className="relative back md:hidden"
+      >
         <Image
           alt="logo"
           height="2000"
@@ -158,7 +169,7 @@ function Intro() {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 }
