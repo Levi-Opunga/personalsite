@@ -1,7 +1,7 @@
 
 export const metadata = {
-  title: "Levi's Site",
-  description: "My personal websites with my  blog posts",
+  title: "Levi Opungas's Personal Site",
+  description: "My personal Projects",
   icons: {
     icon: "/circle.png",
   },
