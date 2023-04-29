@@ -1,15 +1,25 @@
+"use client"
 import React, { Component } from "react";
 import { motion } from "framer-motion";
+import { useInView } from 'react-intersection-observer';
 
 
 const StackSummary = () => {
+ const [ref, inView] = useInView({
+   threshold: 0.8, // trigger when 50% of the element is in view
+   triggerOnce: true, // only trigger the animation once
+ });
+  
   return (
     <>
       <div className="md:grid mt-11 hidden  grid-cols-2 md:mx-32">
         <motion.div
-          whileInView={{visibility:"visible"}}
+          // whileInView={{visibility:"visible"}}
+          // transition={{ duration: 0.7 }}
+          // initial={{ visibility: "hidden" }}
+          ref={ref}
+          animate={{ x: inView ? 0 : -200, y: inView ? 0 : 100 }}
           transition={{ duration: 0.7 }}
-          initial={{ visibility: "hidden" }}
           className="text-start mx-16 my-auto"
         >
           <h2 className="text-blue-400 font-fira uppercase  text-2xl font-bold">
@@ -22,9 +32,9 @@ const StackSummary = () => {
           </div>
         </motion.div>
         <motion.div
-          whileInView={{ visibility:"visible"}}
+          ref={ref}
+          animate={{ x: inView ? 0 : 200, y: inView ? 0 : 100 }}
           transition={{ duration: 0.7 }}
-          initial={{ visibility: "hidden" }}
           className="text-lg pb-5  px-6"
         >
           <p className="font-fira pt-10 text-white/50">
